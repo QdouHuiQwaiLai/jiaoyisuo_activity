@@ -112,8 +112,8 @@ class DoWatch():
 
 def Go():
   pList = []
-  pList.append(Thread(target=DoWatch, args=('ok币', 'https://okhelp.okex.com', 1600581355 )))
-  pList.append(Thread(target=DoWatch, args=('火币', 'https://huobiglobal.zendesk.com', 1600480986)))
+  pList.append(Thread(target=DoWatch, args=('ok币', 'https://www.okex.com/support/', 1600581355 )))
+  pList.append(Thread(target=DoWatch, args=('火币', 'https://huobiglobal.zendesk.com', 1600684247)))
   for p in pList:
     p.start()
   for p in pList:
@@ -126,3 +126,6 @@ if __name__ == '__main__':
   # DoWatch('币安', 'https://binance.zendesk.com', 1)
   Go()
   pass
+
+
+ #  nohup python3 main.py &
